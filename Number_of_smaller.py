@@ -1,0 +1,14 @@
+
+n, m = map(int, input().split())
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
+
+i = 0
+res = []
+
+for x in b:
+    while i < n and a[i] < x:
+        i += 1
+    res.append(str(i))
+
+print(" ".join(res))
